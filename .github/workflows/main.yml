@@ -16,7 +16,7 @@ jobs:
         run: docker build -t sharmashubham0710/flask-app:v1 .
       
       - name: Login to docker Hub
-        run: echo "sharmashubham0710" | docker login -u sharmashubham0710 --password-stdin
+        run: echo "shubham_032711" | docker login -u sharmashubham0710 --password-stdin
       
       - name: Push docker image
         run: docker push sharmashubham0710/flask-app:v1
