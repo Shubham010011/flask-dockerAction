@@ -12,11 +12,11 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       
-      - name: Build Docker image
+      - name: Build docker image
         run: docker build -t sharmashubham0710/flask-app:v1 .
       
-      - name: Login to Docker Hub
+      - name: Login to docker Hub
         run: echo "sharmashubham0710" | docker login -u sharmashubham0710 --password-stdin
       
-      - name: Push Docker image
+      - name: Push docker image
         run: docker push sharmashubham0710/flask-app:v1
